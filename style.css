@@ -56,7 +56,7 @@ body {
 
 @font-face {
     font-family: 'Aniron';
-    src: url('aniron\\anirm___.ttf') format('truetype');
+    src: url('anirm___.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -124,7 +124,7 @@ body {
 
 @font-face {
     font-family: 'Ringbearer';
-    src: url('ringbearer\\RINGM___.TTF') format('truetype'); 
+    src: url('RINGM___.TTF') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }
