@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
-    <link rel="icon" type="image/png" href="icon.png"> <!-- ICON -->
+    <link rel="icon" type="image/png" href="icon.png">
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
 </head>
@@ -60,11 +60,16 @@
                 <!-- <p>Map found on <a href="https://imgur.com/highly-detailed-map-of-new-zealand-not-just-some-other-islands-that-look-like-i-promise-NrgFc4C" target="_blank">imgur</a>.</p> -->
                 <p>Interactive map created with <a href="https://leafletjs.com/" target="_blank">Leaflet.js</a> and <a href="https://github.com/Leaflet/Leaflet.markercluster" target="_blank">Leaflet.markercluster</a>.</p>
             </div>        
+            <div id="copyright-bar">
+                <p>&copy; 2024 Middle-Earth Interactive Map. All rights reserved.</p>
+            </div>
         
         </div>
+        <button id="toggle-sidebar">&lt;</button>
         <!-- Map Section -->
         <div id="map"></div>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
+
