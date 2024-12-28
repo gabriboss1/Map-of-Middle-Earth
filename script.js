@@ -398,18 +398,20 @@ function togglePath(category, show) {
     }
 };
 
-document.querySelectorAll('#sidebar input[type="checkbox"]').forEach(input => {
-    input.addEventListener('change', function () {
-        const groupKey = this.closest('ul').previousElementSibling.textContent.toLowerCase();
-        const category = this.value;
-        const show = this.checked;
-        if (groupKey === 'paths') {
-            togglePath(category, show);
-        } else {
-            toggleLayer(groupKey, category, show);
-        }
-    });
+const sidebar = document.getElementById('sidebar');
+const toggleButton = document.getElementById('toggle-sidebar');
+
+toggleButton.addEventListener('click', () => {
+    sidebar.classList.toggle('collapsed');
+    toggleButton.classList.toggle('collapsed');
+
+    if (sidebar.classList.contains('collapsed')) {
+        toggleButton.textContent = '>'; 
+    } else {
+        toggleButton.textContent = '<'; 
+    }
 });
+
 
 addPathOverlays();
 addQuestMarkers();
